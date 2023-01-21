@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+:root {
+    --mainColor: 44, 51, 51;
+    --secondColor: 255, 253, 252;
+    --thirdColor: 145, 216, 228;
+    --fourthColor: 130, 170, 227;
+
+    --gradientColorBg: rgb(128,157,210);
+    --gradientColorBg2: linear-gradient(90deg, rgba(128,157,210,.7) 0%, rgba(69,252,229,.7) 100%); 
+}
+
+body {
+    background: rgb(128,157,210);
+    background: linear-gradient(90deg, rgba(128,157,210,.7) 0%, rgba(69,252,229,.7) 100%);
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+}
+
+.navbar {
+    background-color: rgba(var(--secondColor), 1) !important;
+    z-index: 101;
+}
+
+/* .btn {
+    background-color: rgba(var(--mainColor), 1) !important; 
+    border-radius: 7px !important; 
+    color: white !important; 
+} */
+
+.main-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 600 !important;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(var(--secondColor), 1);
+}
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 15px;
+}
